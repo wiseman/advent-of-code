@@ -145,9 +145,7 @@
 
 (test/deftest dance-test
   (test/testing "dance"
-    (test/is (= (dance (line "abcde")
-                       (map parse-move
-                            ["s1" "x3/4" "pe/b"]))
+    (test/is (= (dance (line "abcde") (map parse-move ["s1" "x3/4" "pe/b"]))
                 (line "baedc")))))
 
 
